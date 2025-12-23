@@ -21,8 +21,8 @@ void Body::UpdatePosition(const double dt)
   for (std::size_t i = 0; i < 3; ++i)
   {
       double a = _force[i] / _mass;
-      _position[i] +=  _velocity[i] * dt + 0.5 * a * dt * dt;
       _velocity[i] += a * dt;
+      _position[i] +=  _velocity[i] * dt;
       _force[i] = 0.0;
   }
   _time += dt;
