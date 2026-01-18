@@ -34,7 +34,11 @@ void Body::Log()
   out << _position[0] << "\t" << _position[1] << "\t" << _position[2] << "\t" << _time << "\n";
 }
 
+const std::string &Body::GetName() const { return _name; }
+
 const double Body::GetMass() const { return _mass; }
+
+const double Body::GetTime() const { return _time; }
 
 const std::vector<double> &Body::GetPosition() const { return _position; }
 

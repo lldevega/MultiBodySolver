@@ -1,7 +1,6 @@
 dependencies:
-  - gcc=13.2.0
-  - gcc_linux-64=13.2.0
-  - gxx=13.2.0
-  - gxx_linux-64=13.2.0
-  - make=4.3
+  - cmake=3.28
   - python=3.10
+  - glad=0.1.36
+  - glfw=3.4
+
